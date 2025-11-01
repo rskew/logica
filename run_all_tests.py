@@ -18,10 +18,10 @@
 """Running all integration tests."""
 
 import sys
-from common import logica_test
+from logica.common import logica_test
 from integration_tests import run_tests as integration_tests
 from integration_tests.import_tests import run_tests as import_tests
-from type_inference.research.integration_tests import run_tests as type_inference_tests
+from logica.type_inference.research.integration_tests import run_tests as type_inference_tests
 
 
 if 'golden_run' in sys.argv:

@@ -16,13 +16,13 @@
 
 """A suite of tests for type inference."""
 
-from common import logica_test
+from logica.common import logica_test
 
 def RunTypesTest(name, src=None, golden=None):
   src = src or (
-    'type_inference/research/integration_tests/' + name + '.l')
+    'src/logica/type_inference/research/integration_tests/' + name + '.l')
   golden = golden or (
-    'type_inference/research/integration_tests/' + name + '.txt')
+    'src/logica/type_inference/research/integration_tests/' + name + '.txt')
   logica_test.TestManager.RunTypesTest(name, src, golden)
 
 def RunAll():

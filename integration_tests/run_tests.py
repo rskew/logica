@@ -16,7 +16,7 @@
 
 """A suite of tests for import functionality."""
 
-from common import logica_test
+from logica.common import logica_test
 
 
 def RunTest(name, src=None, golden=None, predicate=None,
@@ -66,7 +66,7 @@ def RunAll(test_presto=False, test_trino=False, test_clingo=True):
     RunTest("dialects/trino/joins_test")
 
   if test_clingo:
-    from common import duckdb_logica
+    from logica.common import duckdb_logica
     RunTest('clingo_sum_test')
     RunTest('duckdb_clingo')
     RunTest('clingo_basic_test')

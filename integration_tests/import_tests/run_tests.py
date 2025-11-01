@@ -16,7 +16,7 @@
 
 """A suite of tests for import functionality."""
 
-from common import logica_test
+from logica.common import logica_test
 
 
 def RunTest(name, src, golden, predicate, user_flags=None):
